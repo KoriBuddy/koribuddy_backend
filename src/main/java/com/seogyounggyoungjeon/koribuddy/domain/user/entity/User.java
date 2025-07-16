@@ -1,4 +1,4 @@
-package com.seogyounggyoungjeon.koribuddy.domain.member.entity;
+package com.seogyounggyoungjeon.koribuddy.domain.user.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -9,7 +9,8 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 @ToString
-public class Member {
+@Table(name = "member")
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
